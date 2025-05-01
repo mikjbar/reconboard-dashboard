@@ -38,7 +38,7 @@ export default function App() {
       {error && <p className="text-red-500">❌ {error}</p>}
 
       {!loading && !error && leads.length === 0 && (
-        <p>No leads found. Add some records to see them here.</p>
+        <p className="text-gray-500">No leads found.</p>
       )}
 
       {!loading && !error && leads.length > 0 && (
@@ -66,4 +66,3 @@ export default function App() {
     </div>
   );
 }
-// Trigger rebuild
